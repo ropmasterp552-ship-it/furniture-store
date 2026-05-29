@@ -3,61 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artisan Home Furniture Store</title>
+    <title>Artisan Home Furniture</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fcfbf9; color: #3e3a35; }
-        header { background-color: #f8f6f1; color: #1a1815; padding: 3rem 1rem; text-align: center; border-bottom: 1px solid #eae1d6; }
-        .container { max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem; }
-        
-        /* Grid and Animation */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: linear-gradient(180deg, #ff822f 0%, #ffffff 100%); min-height: 100vh; }
+
+        /* Restored Animation */
         .card { 
-            background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
-            overflow: hidden; border: 1px solid #f0e9df;
-            animation: fadeIn 0.8s ease-in-out; /* The Animation */
+            background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            overflow: hidden; animation: fadeInUp 0.8s ease-out forwards;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: 0.3s; }
-        .card-image-container { width: 100%; height: 250px; background-color: #f8f6f1; }
-        .card-image { width: 100%; height: 100%; object-fit: cover; }
-        .card-content { padding: 1.5rem; }
-        .buy-btn { background-color: #bf9868; color: white; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: 600; }
-        .buy-btn:hover { background-color: #a88151; }
+        /* Navigation Style */
+        nav { background: white; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: #3e3a35; font-weight: bold; }
+        nav a:hover { color: #bf9868; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; text-align: center; }
+        .logo { width: 300px; margin-bottom: 0rem; }
+
+        
+
+        .card-image { width: 100%; height: 250px; object-fit: cover; }
+        
+       
+        
     </style>
 </head>
+
+
 <body>
 
-    <header>
-        <h1>Artisan Home Furniture</h1>
-        <p>Curated design for modern living.</p>
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <div class="container">
-        <div class="grid">
-            
-            <script>
-                for(let i=1; i<=5; i++) {
-                    document.write(`
-                        <div class="card">
-                            <div class="card-image-container">
-                                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=600&auto=format&fit=crop" alt="Furniture" class="card-image">
-                            </div>
-                            <div class="card-content">
-                                <h2>Furniture Piece ${i}</h2>
-                                <p>Elegant design for your home.</p>
-                                <a href="#" class="buy-btn">Purchase</a>
-                            </div>
-                        </div>
-                    `);
-                }
-            </script>
-
-        </div>
+        <img src="plume.png" alt="Brand Logo" class="logo">
+        <h1>Welcome to Artisan Home</h1>
+        <p>Quality furniture for the modern soul.</p>
+        <a href="shop.html" class="buy-btn">View Collection</a>
     </div>
 
 </body>
+<div class="container">
+    
+    
+    <h1>Our Furniture Collection</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="high.jpg" alt="Furniture" class="card-image">
+            <div class="card-content"> 
+            </div>
+        </div>
+    </div>
+</div> 
 </html>
