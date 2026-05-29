@@ -94,7 +94,7 @@ function renderCartItems() {
     
     if (cart.length === 0) {
         listContainer.innerHTML = `<div class="empty-message">Your cart feels lonely. Add luxury pieces!</div>`;
-        totalPriceElement.innerText = "0.00دج";
+        totalPriceElement.innerText = "0.00 da";
         return;
     }
     
@@ -109,7 +109,7 @@ function renderCartItems() {
                 <img src="${item.image}" alt="${item.name}">
                 <div class="item-details">
                     <h4>${item.name}</h4>
-                    <p>${item.price.toFixed(2)}دج × ${item.quantity}</p>
+                    <p>${item.price.toFixed(2)}da × ${item.quantity}</p>
                 </div>
                 <button class="remove-item-cross" onclick="removeFromCart('${item.id}')">×</button>
             </div>
@@ -117,5 +117,5 @@ function renderCartItems() {
     });
     
     listContainer.innerHTML = listHTML;
-    totalPriceElement.innerText = `${finalTotal.toFixed(2)}دج`;
+    totalPriceElement.innerText = `${finalTotal.toFixed(2)}da`;
 }
