@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Artisan Home</title>
+    <style>
+        /* Remove body padding to let nav touch the top */
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background: linear-gradient(180deg, #d36f2c 0%, #ffffff 100%); 
+            min-height: 100vh; 
+            margin: 0; 
+            
+        }
+        
+       /* Navigation Style */
+        nav { background: white; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: #3e3a35; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { color: #bf9868; }
+
+
+        /* Style for the active/current page */
+        nav a.active { color: #bf9868; }
+        nav a:hover { color: #bf9868; }
+
+        .contact-container { 
+            max-width: 1000px; margin: 3rem auto; background: white; padding: 3rem; 
+            border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+        }
+
+        .info-side h1 { font-size: 2rem; color: #3e3a35; margin-bottom: 2rem; }
+        .info-side p { margin-bottom: 1rem; color: #666; }
+
+        .form-side input, .form-side textarea { 
+            width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ddd; 
+            border-radius: 8px; box-sizing: border-box; 
+        }
+        .form-side textarea { height: 120px; }
+        
+        .submit-btn { 
+            background: #2d5a27; color: white; border: none; padding: 1rem 2rem; 
+            border-radius: 8px; cursor: pointer; font-weight: bold; 
+        }
+    </style>
+</head>
+</script>
+<body>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" style="color: #bf9868;">Contact</a>
+</nav>
+
+<div class="contact-container">
+    <div class="info-side">
+        <h1>Contactez Artisan Home</h1>
+        <p>📞 0558 29 15 30</p>
+        <p>✉️ contact@artisanhome.com</p>
+        <p>📍 Oran, Akid Lotfi</p>
+    </div>
+
+    <div class="form-side">
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="nom" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Mettez votre message ici"></textarea>
+            <button type="submit" class="submit-btn">Envoyer un message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

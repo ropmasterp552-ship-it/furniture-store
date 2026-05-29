@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css"> <style></style>
+    <title>Artisan Home Furniture</title>
+    <style>
+        /* Base Styles */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: linear-gradient(180deg, #ff822f 0%, #ffffff 100%); min-height: 100vh; color: #3e3a35; }
+    
+        /* Navigation Style */
+        nav { background: white; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: #3e3a35; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { color: #bf9868; }
+
+        /* Layout */
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; text-align: center; }
+        .logo { width: 300px; margin-bottom: 0rem; }
+
+        /* Professional Button */
+        .buy-btn {
+            display: inline-block;
+            background-color: #bf9868;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 4px;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(191, 152, 104, 0.2);
+        }
+        .buy-btn:hover {
+            background-color: #a88151;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 12px rgba(191, 152, 104, 0.3);
+        }
+
+        /* Restored Animation & Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+        .card { 
+            background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            overflow: hidden; animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-image { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 1.5rem; }
+        
+       
+        
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+        <a href="index.html" style="color: #bf9868;">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+    <div class="container">
+        <img src="plume.png" alt="Brand Logo" class="logo">
+        <h1>Welcome to Artisan Home</h1>
+        <p>Quality furniture for the modern soul.</p>
+        <a href="shop.html" class="buy-btn">View Collection</a>
+    </div>
+
+    <div class="container">
+        <h2>Featured Collection</h2>
+        <div class="grid">
+            </div>
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+<div class="container">
+    
+    
+    <h1>Our Furniture Collection</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="high.jpg" alt="Furniture" class="card-image">
+            <div class="card-content"> 
+            </div>
+        </div>
+    </div>
+</div> 
+</html>
