@@ -53,6 +53,7 @@
         .action-btn:hover { background: #a88151; transform: translateY(-2px); }
         .back-link { margin-top: 1.5rem; display: inline-block; color: #bf9868; text-decoration: none; font-weight: 600; }
     </style>
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
 
@@ -75,10 +76,10 @@
                 Experience high-end design and absolute relaxation. This premium accent chair features beautiful neutral-toned striped linen upholstery, meticulously structured from a durable premium wood frame. Perfect for living rooms, reading corners, or styling a cozy modern space.
             </p>
             
-            <a href="#" class="action-btn">Add to Cart</a>
+            <button class="action-btn" onclick="addToCart('serene-chair', 'Serene Accent Chair', '15000', 'image_f87bc4.png')">Add to Cart</button>
             <a href="shop.html" class="back-link">← Back to Shop Collection</a>
         </div>
     </div>
-
+    <script src="cart.js"></script>
 </body>
 </html>
