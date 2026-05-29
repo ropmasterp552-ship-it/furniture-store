@@ -23,7 +23,7 @@ function injectCartUI() {
             <div class="cart-footer">
                 <div class="cart-total-row">
                     <strong>Total:</strong>
-                    <span id="cart-total-price">0.00دج</span>
+                    <span id="cart-total-price">0.00da</span>
                 </div>
                 <button class="checkout-btn" onclick="alert('Checkout integration coming up next step!')">Proceed to Secure Checkout</button>
             </div>
